@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.chengjie.qqlogin.MainActivity">
+
+    <ImageView
+        android:id="@+id/head_pc"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/qqpic"/>
+
+    <LinearLayout
+        android:id="@+id/LL_1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_pc"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="帐号："
+            android:textSize="24sp"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:id="@+id/et_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:background="#fff"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/LL_1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="密码："
+            android:textSize="24sp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/et_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:background="#fff"/>
+
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LL_2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="登录"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:background="#00ffff"
+            />
+
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LL_2"
+            android:text="注册"
+            android:layout_marginLeft="210dp"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:background="#00ffff"
+            android:layout_marginTop="30dp"/>
+
+
+
+</RelativeLayout>
